@@ -1,0 +1,9 @@
+django
+djangorestframework
+django-cors-headers
+django-environ
+pytest
+cx_Oracle
+Pillow
+xrpl-py
+coverage

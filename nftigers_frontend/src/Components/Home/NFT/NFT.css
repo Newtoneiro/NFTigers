@@ -1,0 +1,139 @@
+.nft_main {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  box-sizing: border-box;
+  padding: 10px;
+
+  background-color: var(--soft-black);
+
+  transition: 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+  font-family: "Righteous", cursive;
+}
+
+.nft_selected {
+  width: 85%;
+  height: 400px;
+  min-height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  box-sizing: border-box;
+  padding: 5px;
+}
+
+.nft_selected_img {
+  width: 100%;
+  height: 80%;
+  object-fit: cover;
+}
+
+.nft_selected_desc {
+  width: 100%;
+  height: 60px;
+  background-color: var(--default-white);
+  box-shadow: 0 2px 20px var(--default-black-3);
+  box-sizing: border-box;
+  padding: 5px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  letter-spacing: 1px;
+}
+
+.nft_selected_desc_right {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.nft_selected_desc_right h2 {
+  margin: 0;
+  font-size: 10px;
+}
+
+.nft_selected_desc_right h3 {
+  margin: 0;
+  font-size: 15px;
+}
+
+.nft_list {
+  width: 600px;
+  height: 120px;
+  box-sizing: border-box;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  gap: 5px;
+}
+
+.nft_list_nft {
+  width: 150px;
+  height: 100px;
+  background-color: black;
+  cursor: pointer;
+}
+
+.nft_list_nft_image {
+  width: 100%;
+  height: 100%;
+  opacity: 0.5;
+  object-fit: cover;
+
+  transition: 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.nft_list_nft_focused .nft_list_nft_image {
+  opacity: 1;
+
+  transition: 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.nft_nonfts {
+  color: var(--default-white);
+}
+
+.nft_selected_image_container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  min-height: 340px;
+  max-height: 340px;
+
+  background-color: var(--default-black-1);
+
+  overflow: hidden;
+}
+
+.nft_selected_image_background {
+  position: absolute;
+  width: 100%;
+  z-index: 0;
+  opacity: 0.6;
+  filter: blur(8px);
+  -webkit-filter: blur(4px);
+}
+
+.nft_selected_image {
+  width: auto;
+  height: 350px;
+  object-fit: cover;
+  z-index: 10;
+
+  transition: 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+}

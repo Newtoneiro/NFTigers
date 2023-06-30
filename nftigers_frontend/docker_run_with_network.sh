@@ -1,0 +1,1 @@
+docker run -p 3000:3000 -d --restart unless-stopped --network pzsp_network --name react dockerized-react

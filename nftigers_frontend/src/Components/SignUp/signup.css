@@ -1,0 +1,11 @@
+.signup {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  transition: cubic-bezier(0.075, 0.82, 0.165, 1) 0.8s;
+}

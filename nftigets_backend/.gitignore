@@ -1,0 +1,22 @@
+__pycache__/
+
+# Compiled Python bytecode
+*.py[cod]
+
+*.app
+*.exe
+*.war
+
+*.log
+
+*.sqlite3
+
+/env
+*.env
+
+.vscode/
+venv/
+
+.pytest_cache
+
+.coverage
